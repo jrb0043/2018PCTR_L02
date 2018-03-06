@@ -39,6 +39,10 @@ public class Ball {
 		reflect();
 		
 		//TODO Check postcondition
+		assert this.getX()<Board.RIGHTBOARD;
+		assert this.getX()>Board.LEFTBOARD;
+		assert this.getY()>Board.BOTTOMBOARD;
+		assert this.getY()<Board.TOPBOARD;
 	}
 
 	private void reflect() {
